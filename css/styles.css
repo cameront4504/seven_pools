@@ -1,0 +1,395 @@
+/* -------------------------------
+
+COLORS, FONTS, HTML ENTITIES, NOTES
+
+---------------------------------*//*
+
+COLORS:
+
+FONTS:
+
+ENTITIES:
+
+â– = &#x2756;
+
+NOTE:
+
+Styles are organized by page.
+Main refers to styles that are used in multiple pages.
+
+/* -------------------------------
+
+0.0 Modifiers
+
+---------------------------------*/
+
+.centerThis {
+	text-align: center;
+}
+
+.rightThis {
+	float: right;
+}
+
+.borderThis {
+	border: 1px solid white;
+	border-radius: 10px;
+}
+
+/* HIDDEN FROM START */
+/* These are separated just for testing, consolidate later */
+
+#imageViewer, #premise span, #textBorder1 {
+	display: none;
+}
+
+.hideThisThing {
+	display: none;
+}
+
+#suspectPage {
+	display: none;
+}
+
+#interviewPage {
+	display: none;
+}
+
+.hideThisThing {
+	display: none;
+}
+
+/* -------------------------------
+
+1.0 Main
+
+---------------------------------*/
+
+html,body {
+	margin: 0;
+	height: 100%;
+	overflow: hidden;
+	
+	font-family: 'Press Start 2P', cursive;
+	color: white;
+	
+	background-color: black;
+	background-image: url("../assets/blueLava.webp");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #c3bff0;
+	transition: 0.6s;
+}
+
+.container {
+	width: 100%;
+}
+
+hr {
+	margin-bottom: 0;
+}
+
+button {
+	font-family: 'Press Start 2P', cursive;
+	text-transform: uppercase;
+	
+	border-radius: 0px !important;
+	transition: 0.6s;
+}
+
+button:hover {
+	background-color:  #67559c  !important;
+	color: white !important;
+}
+
+.borderThis {
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.textBoxBorder {
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.textBox {
+	width: 100%;
+	height: 260px;
+	padding: 20px;
+	
+	font-family: 'Press Start 2P', cursive;
+	font-size: .9em;
+	color: white;
+	
+	border: 1px dashed white;
+	border-radius: 10px;
+}
+
+.backBox {
+	background-color: black;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-left: -90px;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	
+	text-transform: uppercase;
+	font-family: 'Press Start 2P', cursive;
+	font-size: 10px;
+}
+
+/* MAIN SCREEN */
+
+#borderTitle {
+	background-color: black;
+	border: 1px solid white;
+	border-radius: 10px;
+	padding: 10px;
+	
+	margin-top: 12em;
+}
+
+#titleScreen {
+	padding: 30px;
+	background-color: black;
+	border: 1px dashed white;
+	border-radius: 10px;
+}
+
+#titleScreen h1 {
+	font-family: 'Press Start 2P', cursive;
+	font-size: 3em;
+	font-weight: bolder;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: 20px;
+}
+
+h1, h2, h3, h4, h5 {
+	text-transform: uppercase;
+	font-family: 'Press Start 2P', cursive;
+}
+
+h4 {
+	font-size: .7em;
+}
+
+#jaccuseLink {
+	color: grey;
+	transition: .6s;
+}
+
+/* BEGINNING PAGE */
+
+#imageViewer {
+	width: 80%;
+	margin: auto;
+	height: 290px;
+	overflow: hidden;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+#imageViewer img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border: 1px solid white;
+	border-radius: 15px;
+}
+
+/* SUSPECTS PAGE */
+
+#suspectPage .columns {
+	width: 80%;
+	margin: auto;
+}
+
+.sus {
+	background-color: black;
+	height: 190px;
+	margin: 20px;
+	padding: 0px;
+	overflow: hidden;
+	transition: .6s;
+}
+
+.sus img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transition: .6s;
+	opacity: .3;
+}
+
+.sus img:hover {
+	opacity: 1;
+}
+
+#suspectPage .textBoxBorder {
+	width: 77%;
+	margin: auto;
+	height: 150px;
+}
+
+#suspectPage .textBox {
+	height: 128px;
+}
+
+/* INTERVIEW PAGE */
+
+#interviewPage {
+	width: 80%;
+	margin: auto;
+	padding-top: 20px;
+	margin-top: 15px;
+}
+
+#chat {
+	background-color: black;
+	height: 250px;
+	border: 1px dashed white;
+	border-radius: 10px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+#chatInput {
+	background-color: black;
+	height: 250px;
+	border: 1px dashed white;
+	border-radius: 10px;
+	padding: 20px;
+	overflow: hidden;
+}
+
+#interviewPage .borderThis:nth-child(1) {
+	margin-bottom: 20px;
+	height: 270px;
+	width: 100%;
+	overflow: hidden;
+}
+
+#portrait {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	transform: scale(1.0);
+	border-radius: 10px;
+}
+
+#suspectTitle {
+	text-align: center;
+}
+
+#chat p, #chatInput p {
+	font-size: .6em;
+}
+
+.choiceMessage {
+	opacity: .5;
+	transition: .2s;
+}
+
+.choiceMessage:hover {
+	opacity: 1;
+	background-color: white;
+	color: black;
+}
+
+.chatMessage {
+	border: 1px solid white;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+	padding: 10px;
+}
+
+.chatMessage:first-of-type {
+	margin-top: 0px;
+}
+
+.playerMessage {
+	background-color: white;
+	color: black;
+}
+
+/* CRIME SCENE PAGE */
+
+#crimescenePage img {
+	transform: rotate(90deg);
+}
+
+#brokenTextBox p {
+	margin-left: -300px;
+	margin-top: 20px;
+	z-index: 1;
+	background-color: #26004d;
+	padding: 10px;
+	border: 1px solid white;
+}
+
+#crimscenePage .backBox {
+	margin-top: -300px;
+	top: 1;
+}
+
+#watchingYou {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: rotate(180deg);
+	margin-bottom: -400px;
+	opacity: .4;
+}
+
+/* JAAACCCUSE PAGE */
+
+#jaccusePage {
+	padding: 20px;
+}
+
+#jaccusePage .textBox {
+	height: 70px;
+	text-align: center;
+	padding: 20px;
+}
+
+/* Last */
+/* The devolution of quality is real */
+
+#finalTextBox {
+	padding: 20px;
+	color: white;
+	background: rgba(0,0,0,0.7);
+	border-radius: 10px;
+	margin-top: 20px;
+	font-size: .6em;
+}
+
+#finalTextBox p {
+	margin-top: 15px;
+}
+
+#endingImage {
+	height: 100px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-top: 20px;
+}
